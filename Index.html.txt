@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propreté & Nettoyage Hôtelier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        section {
+            margin: 20px 0;
+        }
+        section h2 {
+            font-size: 2em;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+        section p {
+            line-height: 1.6;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .service-item {
+            background: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+            margin-top: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        form input, form textarea, form button {
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Propreté & Nettoyage Hôtelier</h1>
+        <p>Votre partenaire pour un environnement impeccable</p>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>À propos</h2>
+            <p>Nous sommes spécialisés dans le nettoyage hôtelier, offrant des services de qualité pour garantir un environnement propre et accueillant. Notre équipe professionnelle met un point d'honneur à répondre aux normes les plus élevées.</p>
+        </section>
+        <section id="services">
+            <h2>Nos Services</h2>
+            <div class="services">
+                <div class="service-item">
+                    <h3>Nettoyage des chambres</h3>
+                    <p>Un nettoyage approfondi pour garantir un séjour parfait à vos clients.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Entretien des espaces communs</h3>
+                    <p>Des espaces communs toujours propres et accueillants.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Blanchisserie</h3>
+                    <p>Un soin particulier pour vos draps, serviettes et uniformes.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <form action="#" method="post">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Propreté & Nettoyage Hôtelier. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
